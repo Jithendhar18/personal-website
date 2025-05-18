@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
               private notificationService: NotificationService) { }
 
   ngOnInit(): void {
-    this.dataService.getGitStats('your-username-goes-here').subscribe(
+    this.dataService.getGitStats('Jithendhar18').subscribe(
       (resp) => {
         this.gitStats = resp;
         this.gitStatsContainer.nativeElement.innerHTML = this.gitStats;
